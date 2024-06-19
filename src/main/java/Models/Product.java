@@ -1,33 +1,15 @@
-package com.tutorial.apidemo.Spring.boot.tutorial.Models;
+package Models;
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.GeneratedValue;
-import jakarta.persistence.GenerationType;
-import jakarta.persistence.Id;
-
-//POJO = Plain Object Java Object
-@Entity
 public class Product {
-    // this is "primary key"
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO) // auto-increment
-    private Long id;
+    private int id;
     private String productName;
     private int year;
     private Double price;
     private String url;
 
-    // default constructor
-    public Product(String productName, int year, Double price, String url) {
-        this.productName = productName;
-        this.year = year;
-        this.price = price;
-        this.url = url;
-    }
-
     @Override
     public String toString() {
-        return "Products{" +
+        return "Product{" +
                 "id=" + id +
                 ", productName='" + productName + '\'' +
                 ", year=" + year +
@@ -36,12 +18,11 @@ public class Product {
                 '}';
     }
 
-    public Long getId() {
-        return id;
-    }
-
-    public void setId(Long id) {
-        this.id = id;
+    public Product(String productName, int year, Double price, String url) {
+        this.productName = productName;
+        this.year = year;
+        this.price = price;
+        this.url = url;
     }
 
     public String getProductName() {
@@ -75,5 +56,4 @@ public class Product {
     public void setUrl(String url) {
         this.url = url;
     }
-
 }
