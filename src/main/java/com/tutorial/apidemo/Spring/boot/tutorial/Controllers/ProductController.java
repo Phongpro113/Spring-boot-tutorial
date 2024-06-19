@@ -1,6 +1,6 @@
 package com.tutorial.apidemo.Spring.boot.tutorial.Controllers;
 
-import Repositories.ProductRepository;
+import com.tutorial.apidemo.Spring.boot.tutorial.Repositories.ProductRepository;
 import com.tutorial.apidemo.Spring.boot.tutorial.Models.Product;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;

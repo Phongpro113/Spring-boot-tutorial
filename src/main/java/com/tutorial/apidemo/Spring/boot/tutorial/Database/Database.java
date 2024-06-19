@@ -1,6 +1,6 @@
-package Database;
+package com.tutorial.apidemo.Spring.boot.tutorial.Database;
 
-import Repositories.ProductRepository;
+import com.tutorial.apidemo.Spring.boot.tutorial.Repositories.ProductRepository;
 import com.tutorial.apidemo.Spring.boot.tutorial.Models.Product;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
