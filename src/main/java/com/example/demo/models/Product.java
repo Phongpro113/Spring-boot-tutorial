@@ -26,6 +26,9 @@ public class Product {
                 '}';
     }
 
+    public Product() {
+    }
+
     public Product(String productName, int year, Double price, String url) {
         this.productName = productName;
         this.year = year;
