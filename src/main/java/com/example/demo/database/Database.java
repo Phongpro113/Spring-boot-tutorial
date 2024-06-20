@@ -1,12 +1,12 @@
-package Database;
+package com.example.demo.database;
 
-import Models.Product;
+import com.example.demo.models.Product;
+import com.example.demo.repositories.ProductRepository;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
-import repositories.ProductRepository;
 
 @Configuration
 public class Database {
